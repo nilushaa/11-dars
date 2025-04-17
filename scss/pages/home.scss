@@ -1,0 +1,177 @@
+.grow {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  .grow__container {
+    display: flex;
+    align-items: center;
+  }
+  .grow__image {
+    margin-right: 8rem;
+    border-radius: $radius-8;
+  }
+  .grow__text__contant {
+    width: 100%;
+    max-width: 530px;
+  }
+  .grow__title {
+    font-family: "Martian Mono";
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 130%;
+    letter-spacing: -2px;
+    margin-bottom: 3.4rem;
+    color: $neutral-900;
+  }
+  .grow__List {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .grow__item {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    width: 431px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: $neutral-700;
+    //   background-image: url(../../images/icon-check.svg);
+    //   background-repeat: no-repeat;
+    //   background-position: center left -20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .grow {
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: 8rem;
+    }
+    .grow__container {
+      flex-direction: column-reverse;
+    }
+    .grow__image {
+      width: 704px;
+      height: 653.71px;
+      margin-right: 0;
+    }
+    .grow__text__contant {
+      max-width: 100%;
+    }
+    .grow__item {
+      width: 704px;
+      margin-bottom: 4rem;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .grow {
+      padding: 0;
+    }
+    .grow__image {
+      width: 343px;
+      height: 318.5px;
+    }
+    .grow__title {
+      font-size: 3.4rem;
+      margin-bottom: 2.4rem;
+    }
+    .grow__List {
+      gap: 1.6rem;
+    }
+    .grow__item {
+      width: 343px;
+
+
+    }
+    }
+    .grow__item img:hover{
+        background-color: lime;
+    }
+    
+  
+  .club {
+    margin-bottom: 12rem;
+  }
+  
+  .club__container {
+    display: flex;
+    align-items: center;
+    background-image: url(../../images/logos-tech.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom 31px;
+  }
+  
+
+  .club__title {
+    font-family: "Martian Mono";
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 130%;
+    letter-spacing: -2px;
+    margin-bottom: 2.4rem;
+  
+    span {
+      background-image: url(../../images/pattern-circle.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+  
+  .club__desc {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: $neutral-700;
+  
+    span {
+      font-weight: 600;
+    }
+  }
+  .club__image {
+    position: relative;
+    z-index: -1;
+    border-radius: $radius-8;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .club {
+      margin-bottom: 8rem;
+    }
+    .club__container {
+      flex-direction: column;
+      background-position: bottom 50.71px right 54px;
+    }
+    .club__desc {
+      margin-bottom: 4rem;
+    }
+ 
+    .club__title {
+      width: 100%;
+    }
+    .club__image {
+      width: 704px;
+      height: 653.71px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .club {
+      margin-bottom: 6.4rem;
+    }
+    .club__container {
+      background-position: bottom right -156px;
+    }
+  
+    .club__title {
+      font-size: 3.4rem;
+    }
+   
+    .club__image {
+      width: 343px;
+      height: 318.5px;
+    }
+  }
